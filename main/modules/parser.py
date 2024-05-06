@@ -1,7 +1,6 @@
 import re
 import asyncio
-from main.modules.schedule import update_schedule
-from main.modules.usschedule import update_schedulex
+
 from main.modules.utils import status_text
 from main import status
 from main.modules.db import get_animesdb, get_uploads, save_animedb
@@ -76,10 +75,5 @@ async def auto_parser():
             if i["data"] not in queue:
                 queue.append(i["data"])    
                 print("Saved ", i["name"])   
-
-        try:
-            await update_schedulex()
-        except:
-            pass
 
         await asyncio.sleep(60)
