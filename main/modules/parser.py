@@ -17,15 +17,15 @@ def trim_title(title: str):
         if at=="Dual-Audio":
             if source=="HIDI":
                 source = source.replace("HIDI", "HIDIVE")
-                title = f"[AniDL] {titler.strip()} - {episode.strip()} [Web ~ {source.strip()}][720p x265 10Bit][Dual-Audio ~ Opus].mkv"
+                title = f"[AniDL] {titler.strip()} - {episode.strip()} [Web ~ {source.strip()}][480p x265 10Bit][Dual-Audio ~ Opus].mkv"
             else:
-                title = f"[AniDL] {titler.strip()} - {episode.strip()} [Web ~ {source.strip()}][720p x265 10Bit][Dual-Audio ~ Opus].mkv"
+                title = f"[AniDL] {titler.strip()} - {episode.strip()} [Web ~ {source.strip()}][480p x265 10Bit][Dual-Audio ~ Opus].mkv"
         else:
             if source=="HIDI":
                 source = source.replace("HIDI", "HIDIVE")
-                title = f"[AniDL] {at.strip()} - {episode.strip()} [Web ~ {source.strip()}][720p x265 10Bit][Dual-Audio ~ Opus].mkv"
+                title = f"[AniDL] {at.strip()} - {episode.strip()} [Web ~ {source.strip()}][480p x265 10Bit][Dual-Audio ~ Opus].mkv"
             else:
-                title = f"[AniDL] {at.strip()} - {episode.strip()} [Web ~ {source.strip()}][720p x265 10Bit][Dual-Audio ~ Opus].mkv"
+                title = f"[AniDL] {at.strip()} - {episode.strip()} [Web ~ {source.strip()}][480p x265 10Bit][Dual-Audio ~ Opus].mkv"
     return title
 
 def multi_sub(title: str):
