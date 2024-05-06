@@ -4,7 +4,7 @@ from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from config import MONGO_DB_URI
 print("[INFO]: STARTING MONGO DB CLIENT")
 mongo_client = MongoClient(MONGO_DB_URI)
-db = mongo_client.autoanime720pdual
+db = mongo_client.autoanime480pdual
 dbx = mongo_client["anidl"]
 filesdb = dbx["files"]
 animedb = db.animes
