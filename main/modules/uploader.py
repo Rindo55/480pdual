@@ -68,11 +68,11 @@ async def upload_video(msg: Message, img, file, id, tit, ttl, main, subtitle, ny
             
             
             anidltitle = filed.replace("[AniDL] ", "")
-            anidltitle = anidltitle.replace(" [Web ~ AMZN][720p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
-            anidltitle = anidltitle.replace(" [Web ~ CR][720p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
-            anidltitle = anidltitle.replace(" [Web ~ HIDIVE][720p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
-            anidltitle = anidltitle.replace(" [Web ~ DSNP][720p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
-            anidltitle = anidltitle.replace(" [Web ~ HMAX][720p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
+            anidltitle = anidltitle.replace(" [Web ~ AMZN][480p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
+            anidltitle = anidltitle.replace(" [Web ~ CR][480p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
+            anidltitle = anidltitle.replace(" [Web ~ HIDIVE][480p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
+            anidltitle = anidltitle.replace(" [Web ~ DSNP][480p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
+            anidltitle = anidltitle.replace(" [Web ~ HMAX][480p x265 10Bit][Dual-Audio ~ Opus].mkv", "")
             
             fukpath = "downloads/" + filed
             caption = f"{filed}"
@@ -112,7 +112,7 @@ async def upload_video(msg: Message, img, file, id, tit, ttl, main, subtitle, ny
             )
             await asyncio.sleep(3)
             anidl_id=-1001234112068
-            anidlcap = f"<b>{anidltitle}</b>\n<i>({tit})</i>\n\n<blockquote><b>• Source:</b> <code>{source}</code>\n<b>• Video:</b> <code>720p x265 10Bit CRF@23</code>\n<b>• Audio:</b> <code>Japanese & English (OPUS)</code>\n<b>• Subtitle:</b> <code>{subtitle}</code></blockquote>"
+            anidlcap = f"<b>{anidltitle}</b>\n<i>({tit})</i>\n\n<blockquote><b>• Source:</b> <code>{source}</code>\n<b>• Video:</b> <code>480p x265 10Bit CRF@23</code>\n<b>• Audio:</b> <code>Japanese & English (OPUS)</code>\n<b>• Subtitle:</b> <code>{subtitle}</code></blockquote>"
             anidl_markup = InlineKeyboardMarkup(
                 [
                     [
