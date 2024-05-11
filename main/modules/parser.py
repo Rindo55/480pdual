@@ -13,6 +13,8 @@ def trim_title(title: str):
     match = re.match(pattern, title)
     if match:
         titler, episode, extra, source, at = match.groups()
+        titler = titler.replace("Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.", "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu") 
+        titler = titler.replace("Kami wa Game ni Ueteiru.", "Kami wa Game ni Ueteiru")
         if at=="Dual-Audio":
             if source=="HIDI":
                 source = source.replace("HIDI", "HIDIVE")
